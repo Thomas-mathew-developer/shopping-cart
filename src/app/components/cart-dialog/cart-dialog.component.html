@@ -1,0 +1,17 @@
+<!-- <h2 >
+    Your Cart
+    <mat-icon (click)="close()">close</mat-icon>
+</h2> -->
+<div class="card-header row m-0 justify-content-between">
+    <strong>Cart</strong>
+    <mat-icon (click)="close()">close</mat-icon>
+</div>
+
+<mat-dialog-content>
+    <app-cart-item-list [cartItems$]="cartItems$" />
+</mat-dialog-content>
+
+<div class="card-footer text-right justify-content-between row m-0">
+    <strong>Total: ${{ total.toFixed(2) }}</strong>
+    <button class="btn btn-primary btn-sm add_cart_btn" (click)="close()">Checkout</button>
+</div>

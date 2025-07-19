@@ -1,0 +1,18 @@
+@if (cartItems$ | async; as cartItems) {
+  @if (cartItems.length === 0) {
+    <p>Your cart is empty.</p>
+  } @else {
+    @for (item of cartItems; track item.product.id) {
+      <div class="d-flex align-items-center mb-2 border-bottom pb-2">
+        <img [src]="item.product.image" width="40" height="40" style="object-fit: contain;" class="mr-2" />
+        <div class="flex-grow-1">
+          <small>{{ item.product.title }}</small>
+          <div class="text-muted">
+            ${{ item.product.price }} × {{ item.quantity }}
+            = ${{ (item.product.price * item.quantity).toFixed(2) }}
+          </div>
+        </div>
+      </div>
+    }
+  }
+}

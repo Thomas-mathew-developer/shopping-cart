@@ -1,0 +1,11 @@
+<div class="card mt-2 w-100">
+    <div class="card-header">
+        <strong>Cart</strong>
+    </div>
+
+    <app-cart-item-list class="pl-2 pr-2" [cartItems$]="cartItems$"></app-cart-item-list>
+
+    <div class="card-footer text-right">
+        <strong>Total: ${{ total.toFixed(2) }}</strong>
+    </div>
+</div>
