@@ -43,7 +43,7 @@ Navigate to: http://localhost:4200
 
 ---
 
-📦 Features Implemented
+## 📦 Features Implemented
 
 ✅ Product list fetched from [Fake Store API](https://fakestoreapi.com/products.)
 
@@ -61,9 +61,9 @@ Navigate to: http://localhost:4200
 
 ---
 
-🧪 Testing Instructions
+## 🧪 Testing Instructions
 
-### To run unit tests
+To run unit tests
 
 ```bash
 ng test
@@ -71,7 +71,7 @@ ng test
 
 ---
 
-🚫 Current Limitations
+## 🚫 Current Limitations
 The following features are not yet implemented in this version:
 
 ❌ Cart items are not saved in local storage — data is lost on page reload
@@ -84,7 +84,7 @@ The following features are not yet implemented in this version:
 
 ---
 
-🔜 Planned Enhancements
+## 🔜 Planned Enhancements
 These features will be added in future updates:
 
 1. Remove from Cart
@@ -101,26 +101,7 @@ In addition to the cart dialog, a full-page view of the cart will be created for
 
 ---
 
-📁 Folder Structure Overview
-
-src/
-├── app/
-│   ├── components/
-│   │   ├── product-list/        # Displays product list
-│   │   ├── cart/                # Cart container component
-│   │   ├── cart-dialog/         # Dialog popup for the cart
-│   │   └── cart-item-list/      # List of cart items
-│   ├── services/
-│   │   ├── product.service.ts   # Fetches products from API
-│   │   └── cart.service.ts      # Manages cart logic
-│   └── models/
-│       └── product.model.ts     # TypeScript interfaces
-└── assets/
-
-
----
-
-📜 Conclusion
+## 📜 Conclusion
 
 1. This project demonstrates key Angular 17 features, including:
 
