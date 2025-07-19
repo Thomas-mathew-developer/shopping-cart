@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <span>Shopping Cart</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matBadge]="cartCount" matBadgeColor="accent" (click)="openCartDialog()">
+        <mat-icon>shopping_cart</mat-icon>
+    </button>
+</mat-toolbar>
+<router-outlet />
