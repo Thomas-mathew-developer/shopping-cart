@@ -100,6 +100,8 @@ ng build --configuration production
 npx angular-cli-ghpages --dir=dist/shopping-cart/browser
 ```
 
+---
+
 ## 🚫 Current Limitations
 The following features are not yet implemented in this version:
 
