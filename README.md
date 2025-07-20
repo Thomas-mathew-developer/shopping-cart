@@ -71,6 +71,35 @@ ng test
 
 ---
 
+## 📡 Live Demo
+
+The application is deployed and publicly accessible at:
+
+👉 https://thomas-mathew-developer.github.io/shopping-cart/
+
+✅ Make sure to use the full path including the repo name if it's a user/project GitHub Pages site.
+
+---
+
+## 🔁 Redeploying After Future Updates
+
+Whenever you make changes and want to publish them:
+
+### 1. Commit and push your changes to GitHub:
+
+```bash
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+### 2. Rebuild the app and redeploy:
+
+```bash
+ng build --configuration production
+npx angular-cli-ghpages --dir=dist/shopping-cart/browser
+```
+
 ## 🚫 Current Limitations
 The following features are not yet implemented in this version:
 
@@ -90,13 +119,13 @@ These features will be added in future updates:
 1. Remove from Cart
 Allow users to remove individual items from the cart.
 
-2. Cart Count on Toolbar Icon
-Display a badge on the cart icon showing the total number of items.
+<!-- 2. Cart Count on Toolbar Icon
+Display a badge on the cart icon showing the total number of items. -->
 
-3. Persist Cart in Local Storage
+2. Persist Cart in Local Storage
 Automatically save and restore the cart on page reload using localStorage.
 
-4. Dedicated Cart Page
+3. Dedicated Cart Page
 In addition to the cart dialog, a full-page view of the cart will be created for better accessibility and navigation.
 
 ---

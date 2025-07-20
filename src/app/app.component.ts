@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   }
 
   openCartDialog() {
-    this.dialog.open({} as any, {
+    this.dialog.open(CartDialogComponent, {
       maxWidth: '500px', // or '90vw' for responsive
       maxHeight: '80vh',
       panelClass: 'custom-dialog-container',
