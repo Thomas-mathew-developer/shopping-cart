@@ -1,6 +1,6 @@
 @if (cartItems$ | async; as cartItems) {
   @if (cartItems.length === 0) {
-    <p>Your cart is empty.</p>
+    <div class="p-2">Your cart is empty.</div>
   } @else {
     @for (item of cartItems; track item.product.id) {
       <div class="d-flex align-items-center mb-2 border-bottom pb-2">
